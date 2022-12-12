@@ -11,7 +11,7 @@ from tkinter import ttk
 from tkinter.scrolledtext import ScrolledText
 
 
-#mysqldump -u xxxxxxxxx -p lin pass>linsi.sql
+#mysqldump -u xxxxxxxxx -p xxxx pass>xxxxxx.sql
 
 '''   
 		PASSWORD ENCRYPT AND DECRYPT
@@ -27,7 +27,7 @@ def query_account():
 								port=3306,
 								user='xxxxxx',
 								password='xxxxxxxx',
-								db='lin',
+								db='xxxxxxxx',
 								charset='utf8')
 	cursor = conn.cursor()#SQL会话
 	sql_filter = entry_3.get()
@@ -61,7 +61,7 @@ def change_info():
 							port=3306,
 							user='xxxxxx',
 							password='xxxxxxxxx',
-							db='lin',
+							db='xxxxxxxx',
 							charset='utf8')
 	cursor=conn.cursor()
 	change_field = entry_1.get()
@@ -81,7 +81,7 @@ def add_user():
 							port=3306,
 							user='xxxxxxxxx',
 							password='xxxxxxxxx',
-							db='lin',
+							db='xxxxxxxx',
 							charset='utf8')
 		platform= add_entry_1.get()
 		name	= add_entry_2.get()
@@ -150,7 +150,7 @@ def export_data():
 							port=3306,
 							user='xxxxxxxxx',
 							password='xxxxxxxxx',
-							db='lin',
+							db='xxxxxxxx',
 							charset='utf8')
 	cursor=conn.cursor()
 	sql = ''' select * from PASS;'''
