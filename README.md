@@ -1,0 +1,1 @@
+# linsi_password_manager
